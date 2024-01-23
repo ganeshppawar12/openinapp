@@ -8,6 +8,7 @@ import { Route, Routes } from 'react-router-dom';
 import Register from './component/Register';
 import { UserAuthContextProvider } from './context/UserAuthentication';
 import Login from './component/Login';
+import { ToastContainer } from 'react-toastify';
 
 
 function App() {
@@ -38,6 +39,7 @@ console.log(storeuserDatainfo,userInfo)
      </Routes>
      </UserAuthContextProvider>
   <Mainfrom toggel={toggel} setToggel={setToggel} setUserInfo={setUserInfo}></Mainfrom>
+  <ToastContainer></ToastContainer>
     </div>
   );
 }

@@ -7,6 +7,9 @@ import linked from '../image/linked.png'
 import discord from '../image/discord.png'
 import google from '../image/google-icon 1.png'
 import apple from '../image/apple 1.png'
+import CircularIndeterminate from "./progresser";
+
+
 
 const Login = () => {
 
@@ -15,13 +18,19 @@ const [password, setPassword]= useState("");
 const [error,setError] = useState("");
 const {signUp,googleSignIn} = useUserAuth()
 const navigate = useNavigate();
+const [loaded, setloaded] = useState(false);
+
 
 const handleSubmit =async (e)=>{
   e.preventDefault();
   setError("")
   try{
+    setloaded(true);
+
     await signUp(email, password);
     navigate('/')
+    setloaded(false);
+
   }catch(err){
     setError(err.message)
 
@@ -31,14 +40,21 @@ const handleSubmit =async (e)=>{
 const handleGoogleSignin = async (e) => {
   e.preventDefault();
   try {
+    setloaded(true);
+
     await googleSignIn();
     navigate("/dashboard");
+    setloaded(false);
+
   } catch (err) {
     setError(err.message);
+    
   }
 };
   return (
     <div className="LoginContainer">
+   { loaded ?  <CircularIndeterminate></CircularIndeterminate>:
+   <>
              <div className="loginleftSide">
 
              <div className="loginLogo">
@@ -89,6 +105,8 @@ const handleGoogleSignin = async (e) => {
         </div>
       </div>
      </div>
+     </>
+}
     </div>
   )
 }

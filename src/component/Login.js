@@ -7,6 +7,8 @@ import linked from '../image/linked.png'
 import discord from '../image/discord.png'
 import google from '../image/google-icon 1.png'
 import apple from '../image/apple 1.png'
+import CircularIndeterminate from "./progresser";
+
 
 import "./Login.css";
 const Login = () => {
@@ -15,13 +17,19 @@ const Login = () => {
   const [error, setError] = useState("");
   const {user, login, googleSignIn } = useUserAuth();
   const navigate = useNavigate();
+const [loaded, setloaded] = useState(false);
+
 
   const handleSubmit = async (e) => {
     e.preventDefault();
     setError("");
     try {
+    setloaded(true);
+
       await login(email, password);
       navigate("/dashboard");
+    setloaded(false);
+
     } catch (err) {
       setError(err.message);
     }
@@ -30,14 +38,20 @@ console.log(user)
   const handleGoogleSignin = async (e) => {
     e.preventDefault();
     try {
+    setloaded(true);
+
       await googleSignIn();
       navigate("/dashboard");
+    setloaded(false);
+
     } catch (err) {
       setError(err.message);
     }
   };
   return (
     <div className="LoginContainer">
+        {loaded ?<CircularIndeterminate></CircularIndeterminate>:
+        <>
       <div className="loginleftSide">
         <div className="loginLogo">
           <h3>LOGO</h3>
@@ -72,12 +86,14 @@ console.log(user)
               <input
                 type="email"
                 placeholder="johndoe@2gmail.com"
+                required
                 onChange={(e) => setEmail(e.target.value)}
               ></input>
             </div>
             <div  className="loginfrombox">
               <p>password</p>
               <input
+                required
                 type="password"
                 onChange={(e) => setPassword(e.target.value)}
               ></input>
@@ -94,6 +110,8 @@ console.log(user)
           </div>
         </div>
       </div>
+      </>
+}
     </div>
   );
 };
