@@ -393,11 +393,15 @@ background-color: #fff;
         align-items: center;
         justify-content: space-between;
         width: 98%;
+        position: relative;
     }
    
     .hambarger{
         display: block;
-        z-index: 20 !important;
+        position: absolute;
+        z-index: 20 ;
+        right: 10px;
+        bottom: 5px;
     }
     .headTitel img{
         cursor: pointer;
