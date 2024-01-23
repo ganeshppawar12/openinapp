@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Figtree&family=Lato&family=Open+Sans&display=swap');
+
+.FromSecondContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 15px;
+    font-family: 'Figtree', sans-serif;
+}
+
+.instagramLink, .youtubeLink{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 10px;
+    width: 100%;
+}
+.instagramLink h3, .youtubeLink h3 {
+    font-size: 16px;
+    font-weight: 400;
+}
+.instagramLink input ,.youtubeLink input{
+    border:1px solid rgb(226, 225, 225);
+    font-size: 16px;
+    font-weight: 400;
+    padding: 12px;
+    border-radius: 8px;
+    width: 100%;
+    color: #999CA0;
+}

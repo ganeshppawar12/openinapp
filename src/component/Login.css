@@ -1,0 +1,225 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Poppins:wght@900&family=Roboto:wght@100;300;400;500;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Open+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Poppins&display=swap');
+.LoginContainer{
+    display: flex;
+    /* align-items: center; */
+    /* justify-content: space-between; */
+    height: 100vh;
+    
+}
+Link,a{
+    text-decoration: none;
+}
+.loginleftSide{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background:linear-gradient( to left top,#4285F4, #286DE0);
+    padding: 30px;
+    gap: 20px;
+    width: 50%;
+
+}
+
+.loginLogo h3{
+    font-size: 24px;
+    font-weight: 600;
+    letter-spacing: 1.5px;
+    color: #fff;
+    font-family: 'Poppins', sans-serif;
+}
+.LoginTitel h1{
+    font-size: 72px;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    color: #fff; 
+    margin-left: 80px;
+    font-family: 'Montserrat', sans-serif;
+
+}
+.loginSocialIcon{
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    gap: 40px;
+    margin-left: 50px;
+}
+.fromrightSection{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    background-color: #F8FAFF;
+}
+.loginbox{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: space-between;
+    gap: 20px;
+    width: 422px;
+    /* border: 1px solid black; */
+}
+.SignIn h3{
+    font-size: 36px;
+    font-weight: 700;
+    font-family: 'Montserrat', sans-serif;
+
+
+}
+.SignIn p{
+    font-size: 16px;
+    font-weight: 400;
+    font-family: 'Lato', sans-serif;
+
+}
+.DirectLogin{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+.googleLink{
+    display: flex;
+    align-items: start;
+    /* justify-content: space-between; */
+    gap: 10px;
+    padding:8px 15px;
+    background-color: #fff;
+    border-radius: 10px;
+    width: 197px;
+}
+.googleLink:hover{
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px;
+
+}
+.googleLink p{
+    font-size: 12px;
+    font-weight: 400;
+    color: #858585;
+    cursor: pointer;
+    font-family: 'Montserrat', sans-serif;
+
+}
+.loginfrom{
+    background: #fff;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 100%;
+    padding: 20px;
+    border-radius: 20px;
+    font-family: 'Lato', sans-serif;
+
+}
+.loginfrombox{
+    display: flex;
+    flex-direction: column;
+    /* padding:10px 20px; */
+    gap: 10px;
+}
+.loginfrombox p{
+    font-size: 16px;
+    font-weight: 400;
+}
+.loginfrombox input{
+    background-color: #F5F5F5;
+    border-radius: 10px;
+    font-size: 16px;
+    font-weight: 400;
+    color: #000;
+    border: none;
+    padding: 10px;
+    outline: none;
+
+}
+.forgetlink p{
+    color: #346BD4;
+    font-size: 16px;
+    font-weight: 400;
+    cursor: pointer;
+}
+.loginSign button{
+    background-color: #4285F4;
+    border: none;
+    outline: none;
+    color: #fff;
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    font-weight: 700;
+    border-radius: 10px;
+    cursor: pointer;
+    font-family: 'Montserrat', sans-serif;
+
+}
+.loginSign button:hover{
+    background-color: #317ef9;
+
+}
+.Doyouhave{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+.Doyouhave p{
+    font-size: 16px;
+    font-weight: 400;
+    color: #858585;
+    font-family: 'Lato', sans-serif;
+
+}
+.register{
+  
+   color:   #346BD4;
+   cursor: pointer;
+}
+
+@media screen  and (max-width:1000px){
+    .LoginContainer{
+        flex-direction: column;
+        /* width: 98vw; */
+        width: 100%;
+        gap: 20px;
+    }
+    .loginleftSide{
+        width: 100%;
+        justify-content: center;
+        align-items: start;
+        
+    }
+     .loginLogo h3{
+        font-size: 14px;
+    }
+    .LoginTitel h1{
+        margin: 0;
+        font-size: 40px;
+    }
+  .loginSocialIcon{
+        margin: 0;
+    }
+    .loginSocialIcon img{
+        width: 20px;
+        height: 20px;
+    } 
+    .fromrightSection{
+        width: 100%;
+    } 
+    .loginbox{
+        width: 90vw;
+    }
+    .googleLink{
+        width: 43vw;
+    }
+    .googleLink p {
+        font-size: 10px;
+    }
+    .googleLink img{
+        height: 15px;
+        width: 15px;
+    }
+}

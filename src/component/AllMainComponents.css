@@ -1,0 +1,27 @@
+.AllMainComponents{
+    display: flex;
+    align-items: start;
+    justify-content: space-around;
+    gap: 10px;
+}
+
+@media screen and (max-width:1000px) {
+    .AllMainComponents{
+        width: 100vw;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+
+    }
+}
+@media screen and (max-width:600px) {
+    .AllMainComponents{
+        width: 100vw;
+        align-items: center;
+        justify-content: center;
+    
+        position: relative;
+
+    }
+   
+}

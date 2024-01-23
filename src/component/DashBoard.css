@@ -1,0 +1,498 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Poppins:wght@900&family=Roboto:wght@100;300;400;500;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Open+Sans&display=swap');
+.DashBoardContainer{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    /* align-items: start; */
+    justify-content: space-between;
+    gap: 50px;
+    padding: 15px 0;
+    width: 1000px;
+    font-family: 'Montserrat', sans-serif;
+
+}
+
+.DashBoardManuBar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.DashBoardManuBar h1{
+    font-size: 24px;
+    font-weight:900;
+    line-height: 29.26px;
+    cursor: pointer;
+}
+
+.DashBarSearchBar{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+
+}
+.searchBox{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+
+    
+}
+.searchBox input{
+    border: none;
+    outline: none;
+    flex: 0.7;
+    font-size: 14px;
+    font-weight: 400;
+    color: #858585;
+}
+.searchBox img{
+  flex: 0.3;
+  margin-right: 20px;
+
+
+}
+
+.notification,.profile{
+    padding: 5px;
+    cursor: pointer;
+}
+.profile{
+    display: flex;
+    align-items: center;
+    background-color: #4AD15F;
+    padding: 10px 15px;
+    text-align: center;
+    justify-content: center;
+    border-radius: 50%;
+   
+}
+.profile p{
+    font-size: 18px;
+    color: #fff;
+    
+}
+.notification:active{
+    padding: 5px;
+    background: #eeeeee;
+    border-radius: 50%;
+}
+.HighLightSection{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 10px;
+
+}
+
+.highlightInfo{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: space-between;
+    gap: 5px;
+    background-color: #fff;
+    border-radius: 20px;
+    padding: 15px;
+    width: 240px;   
+    height: 120px;
+    border: 2px solid #E0E0E0;
+    cursor: pointer;
+
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+}
+
+.highlightInfo:hover{
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.highLightImg img{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.highLightImg{
+    /* padding:5px; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    height: 31px;
+    width:  31px;
+}
+.highLightImg p{
+    font-size: 11px;
+    font-weight: 400;
+}
+.peiceRating{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    width: 100%;
+}
+.peiceRating p {
+    background-color:  #E9F9EB;
+    color: #4AD15F;
+    border-radius: 34px;
+    padding: 5px;
+    font-size: 10px;
+}
+.highlightTitel{
+    font-family: 'Lato', sans-serif;
+}
+.peiceRating h4{
+    font-weight: 700;
+    font-size: 21px;
+    font-family: 'Open Sans', sans-serif;
+}
+.chartSection{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: space-between;
+    gap: 30px;
+    background-color: #fff;
+    border: 2px solid #E0E0E0;
+ border-radius: 20px;
+ height: 360px;
+ width: 1000px;
+ padding: 30px 20px;
+ box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.ChartHeaderSection{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+ padding:0px 20px;
+
+}
+.chartActivities h3{
+    font-size: 18px;
+    font-weight: 700;
+
+}
+.chartActivities p{
+    font-size: 14px;
+    font-weight: 400;
+    color:#858585;
+
+}
+
+.usergestoptions{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 25px;
+}
+.usergestoptions p{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    font-size: 14px;
+    font-weight: 400;
+    font-family: 'Lato', sans-serif;
+
+}
+.usergestoptions .ge{
+    background: #E9A0A0; 
+   height: 10px;
+   width: 10px;
+    border-radius: 50%;
+}
+.usergestoptions .use{
+    background: #9BDD7C; 
+   height: 10px;
+   width: 10px;
+    border-radius: 50%;
+}
+
+.FooterSection{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+   
+}
+.paichartContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    /* padding: 5px; */
+    border: 2px solid #E0E0E0;
+    border-radius: 20px;
+ padding: 20px;
+ width: 480px;
+background-color: #fff;
+ height: 260px;
+ box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+.Paichartbox{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+   margin-bottom: 15px;
+}
+.Paichartbox h3{
+    font-size: 18px;
+    font-weight: 700;
+}
+.Paichartbox p{
+    font-size: 12px;
+    font-weight: 400;
+    color: #858585;
+}
+.paiChart{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+/* .PieChart svg{
+    height: 500px;
+    width:300px;
+} */
+.piaIteam{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: space-between;
+    gap: 25px;
+}
+.basicTees ,.custom ,.superHo {
+    font-size: 14px;
+    font-weight: 700;
+}
+.bs{
+    background: #9BDD7C; 
+padding: 0px 8px;
+    border-radius: 50%;
+    margin-right: 10px;
+
+}
+.cus{
+background: #F6DC7D;
+padding: 0px 8px;
+border-radius: 50%;
+margin-right: 10px;
+
+
+}
+.super{
+
+    background: 
+    #EE8484;
+    border-radius: 50%;
+    padding: 0px 8px;
+    margin-right: 10px;
+
+
+
+}
+.percentage{
+    font-size: 12px;
+    font-weight: 400;
+    color: #858585;
+    margin: 5px;
+
+
+}
+
+
+.AddProfilesec{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:center;
+    gap: 10px;
+    /* flex: 1; */
+    width: 480px;
+    height: 260px;
+    border-radius: 20px;
+    padding: 30px;
+    border: 2px solid #E0E0E0;
+background-color: #fff;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+
+.AddProfilesec img{
+    background-color: #F2F2F2;
+    padding: 10px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.AddProfilesec p{
+    font-size: 16px;
+    font-weight: 600;
+    color: #858585;
+    cursor: pointer;
+
+}
+
+.userInfoContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 10px;
+
+}
+.userInfoContainer h1{
+    font-size: 24px;
+    font-weight: 600;
+    padding: 20px 0;
+    font-family: 'Figtree', sans-serif;
+
+}
+.userbox{
+    display: flex;
+    /* align-items: start; */
+    justify-content: space-between;
+    gap: 20px;
+}
+.userinfobox1{
+    display: flex;
+    align-items: start;
+    flex-direction: column;
+    gap: 40px;
+    justify-content: space-between;
+}
+.userinfobox1 p{
+    font-size: 14px;
+    font-weight: 400;
+    font-family: 'Figtree', sans-serif;
+    text-decoration: underline;
+}
+.userDetails{
+    display: flex;
+    align-items: center;
+    /* justify-content: space-between; */
+    gap: 10px;
+}
+.hambarger{
+    display: none;
+}
+
+@media screen  and (max-width:1000px){
+    /* .DashBoardContainer {
+        width: 100% !important;
+    } */
+    .DashBoardContainer{
+        width: 100vw;
+    }
+    .headTitel{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 98%;
+    }
+   
+    .hambarger{
+        display: block;
+        z-index: 20 !important;
+    }
+    .headTitel img{
+        cursor: pointer;
+    }
+     .DashBoardManuBar{
+        flex-direction: column;
+        align-items: start;
+        gap: 10px;
+        margin: 0 5px;
+     }
+    .notification{
+        display: none;
+    }
+    .profile{
+        display: none;
+    }
+    .HighLightSection{
+        width: 98%;
+        /* flex-direction: row; */
+    }
+    .highlightInfo{
+        width:40vw;
+    }
+     .chartSection{
+        width: 98%;
+        /* display: none; */
+        overflow-y: hidden;
+     }
+ 
+    .FooterSection{
+        flex-direction: column;
+        width: 98%;
+
+    }
+    .paichartContainer{
+        width: 100%;
+        height: fit-content;
+
+    }
+    .paiChart{
+        /* padding:0 20px; */
+        width: 100%;
+      
+        align-items: center;
+        justify-content: center;
+       gap: 40px;
+    }
+
+    .AddProfilesec{
+        width: 100%;
+        height: fit-content;
+        align-items: start;
+    }
+    .userInfoContainer{
+        width: 100%;
+  align-items: center;
+    }
+   .userbox{
+    gap: 60px;
+   }
+}
+
+@media screen and (max-width:600px) {
+    .HighLightSection{
+        width: 98%;
+        flex-direction: column;
+    }
+    .highlightInfo{
+        width:90vw;
+    }
+    .chartSection {
+        width: 93%
+        ;
+        margin-left: 10px;
+        /* display: none; */
+      
+      
+        overflow-y: hidden;
+    }
+    .paiChart{
+        flex-direction: column;
+        align-items: center;
+        /* height:400px !important; */
+    }
+    .AddProfilesec{
+        width: 90vw;
+        height: fit-content;
+        align-items: start;
+    }
+    .userbox{
+        flex-direction: column;
+    }
+    .paichartContainer {
+        width: 95%;
+        height: fit-content;
+    }
+    
+}

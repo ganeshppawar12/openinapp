@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Poppins:wght@900&family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+.NavbarContainer{
+    background: #4285F4;
+    border-radius: 20px;
+    width: 280px;
+
+}
+.NavbarBox{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: space-between;
+    height:994px;
+    color: #fff;
+    font-family: 'Montserrat', sans-serif;
+    padding: 50px;
+    
+   
+}
+.NavOptions{
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    justify-content: space-between;
+    gap: 40px;
+}
+.NavbarHeading{
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+}
+.NavbarHeading h2{
+    text-align: start;
+    font-size: 36px;
+    font-weight: 700;
+  
+}
+.NavOptions ul{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: space-between;
+    gap: 25px;
+}
+.NavOptions ul li{
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 21.94px;
+    cursor: pointer;
+    
+    
+}
+.NavOptions ul li:hover{
+    font-weight: 700;
+}
+.NavOptions ul li img{
+    height: 18px;
+    width: 18px;
+}
+
+.navbarFotter{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: space-between; 
+}
+
+.navbarFotter ul{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-items:start;
+    justify-content: space-between; 
+    gap: 10px;
+}
+.navbarFotter ul li {
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+    font-weight: 400;
+    cursor: pointer;
+}
+.hammenu{
+    display: none;
+}
+
+@keyframes top-in {
+    from {
+      transform: translateX(100%);
+    }
+    to {
+      transform: translateX(0%);
+    }
+  }
+
+@media screen and (max-width:1000px) {
+
+    .NavbarContainer {
+        width: 0;
+    }
+    .NavbarBox{
+        display: none;
+        
+
+    }
+  
+    .hammenu{
+        display: block;
+        position: absolute;
+        background: #4285F4;
+        width: 100%;
+        /* top: 50px; */
+        top: 40px;
+        color: #fff;
+        left: -10px;
+        animation: top-in 1000ms;
+
+    }
+    .hammenu{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        gap: 10px;
+        padding: 20px;
+        height: 94vh;
+        width: 100vw;
+        z-index: 1;
+    }
+}
+
+@media screen and (max-width:600px) {
+    .hammenu{
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        justify-content: space-between;
+        gap: 10px;
+        padding: 50px;
+        height: 95vh;
+        width: 100vw;
+        left: 0;
+    }
+}
